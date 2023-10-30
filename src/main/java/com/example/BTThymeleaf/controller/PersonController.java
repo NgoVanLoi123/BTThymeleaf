@@ -26,14 +26,14 @@ public class PersonController {
         return "persons";
     }
     @GetMapping("/create-person")
-    public String forwardToBookCreation(Model model) {
+    public String forwardToPersonCreation(Model model) {
         model.addAttribute("nguoiMuonThemMoi", new PersonCreationRequest());
-        return "book-creation";
+        return "person-creation";
     }
 
     @GetMapping("/delete-person/{id}")
     public String deletePerson(@PathVariable("id") int id, Model model) {
-        personService.deleteBook(id);
+        personService.deletePerson(id);
         List<Person> persons = personService.getAll();
         model.addAttribute("dsNguoi", persons);
         return "persons";

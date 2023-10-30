@@ -17,7 +17,7 @@ public class PersonService {
         return personRepository.getAll();
     }
 
-    public void deleteBook(int id) {
+    public void deletePerson(int id) {
         personRepository.delete(id);
     }
 
