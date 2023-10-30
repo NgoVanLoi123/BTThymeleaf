@@ -2,7 +2,7 @@ package com.example.BTThymeleaf.statics;
 
 public enum PersonCategory {
 
-    ADULT("người lớn"),
+    ADULT("Người lớn"),
 
     KID("Thiếu nhi");
 

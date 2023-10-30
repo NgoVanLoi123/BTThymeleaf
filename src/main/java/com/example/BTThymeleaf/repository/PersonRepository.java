@@ -55,6 +55,7 @@ public class PersonRepository {
                 .name(personCreationRequest.getName())
                 .address(personCreationRequest.getAddress())
                 .gender(personCreationRequest.getGender())
+                .categories(Arrays.asList(PersonCategory.KID))
                 .birth(personCreationRequest.getBirth())
                 .build();
         persons.add(person);
