@@ -17,7 +17,6 @@ public class PersonCreationRequest {
     private int id;
     private String name;
     private String address;
-//    @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(pattern = "yyyy-MM-dd")
 
 
