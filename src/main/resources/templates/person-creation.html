@@ -54,8 +54,14 @@
                 </div>
                 <div class="form-group">
                     <label for="gender">Gender:</label>
-                    <input type="text" class="form-control" placeholder="Enter gender" id="gender" th:field="*{gender}">
+                    <select class="form-control" id="gender" th:field="*{gender}">
+                        <option value="">--Chọn--</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
                 </div>
+
                 <button type="submit" class="btn btn-primary">Save</button>
                 <a class="btn btn-secondary" href="/persons">Back</a>
             </form>
