@@ -29,7 +29,7 @@ public class PersonRepository {
                     .name("Trần Văn" + i)
                     .address("Thành phố" + i)
                     .gender("Gioi tính" + i)
-                    .categories(Arrays.asList(PersonCategory.KID))
+                    .categories(Arrays.asList(PersonCategory.HV))
                     .birth(LocalDate.ofEpochDay(i))
                     .build();
 
@@ -55,7 +55,7 @@ public class PersonRepository {
                 .name(personCreationRequest.getName())
                 .address(personCreationRequest.getAddress())
                 .gender(personCreationRequest.getGender())
-                .categories(Arrays.asList(PersonCategory.KID))
+                .categories(Arrays.asList(PersonCategory.HV))
                 .birth(personCreationRequest.getBirth())
                 .build();
         persons.add(person);
